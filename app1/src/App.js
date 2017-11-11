@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
-  constuctor(props) {
-
+  constructor(props) {
+    super(props);
     this.state = {
-      myName: 'Joe'
-    }
+      myName: "Joe"
+    };
+    // this.state = this.state.bind(this);
   }
+
   render() {
-    return (
-      <div className="App">
-        My name is { this.state.myName }
-      </div>
-    );
+    return <div className="App">My name is {this.state.myName}</div>;
   }
 }
 
